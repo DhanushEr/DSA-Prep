@@ -24,7 +24,7 @@ public class Graph {
     Queue<Integer> queue = new LinkedList<>();
 
     visited[start] = true;
-    queue.offer(start);
+    queue.add(start);
 
     while (!queue.isEmpty()) {
       int current = queue.poll();
@@ -33,7 +33,7 @@ public class Graph {
       for (int neighbor : adjacencyList.get(current)) {
         if (!visited[neighbor]) {
           visited[neighbor] = true;
-          queue.offer(neighbor);
+          queue.add(neighbor);
         }
       }
     }
