@@ -78,3 +78,6 @@ public class TopologicalSort {
     System.out.println("Topological Sort Order: " + topoOrder);
   }
 }
+/*Topological Sorting is a type of linear ordering of vertices such that
+ * if there is edge between U and V, U appears before V in that ordering
+ */
